@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #282828;
+}
+#calculator{
+    margin: 5px;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    grid-gap: 2vw 2vh;
+}
+.screen{
+    border-width: 3px;
+    border-color: pink;
+    border-style: solid;
+    background-color: black;
+    color: pink;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.screen h2{
+    font-size: 250%;
+    text-align: end;
+}
+.screen h4{
+    font-size: 120%;
+    text-align: end;
+    border-bottom: 1px solid pink;
+}
+.numpad-button{
+    font-size: 250%;
+    background-color: black;
+    color: pink;
+    border: 2px solid pink;
+
+}
+.numpad-number{
+    background-color: pink;
+    color: black;
+    border: 2px solid black;
+}
