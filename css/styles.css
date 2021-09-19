@@ -22,6 +22,12 @@ body{
     grid-column-start: 2;
     grid-column-end: 5;
 }
+.upper-screen{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    border-bottom: 1px solid pink;
+}
 .screen h2{
     font-size: 250%;
     text-align: end;
@@ -29,7 +35,6 @@ body{
 .screen h4{
     font-size: 120%;
     text-align: end;
-    border-bottom: 1px solid pink;
 }
 .numpad-button{
     font-size: 250%;
