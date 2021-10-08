@@ -7,54 +7,62 @@
 </head>
 <body>
 
-<div id="calculator">
-    <button class="numpad-button">|x|</button>
-    <div class="screen">
-        <div class="upper-screen">
-            <h4 id="screen2"></h4>
-            <h4 id="screen3"></h4>
+<div class="center">
+    <div id="calculator">
+        <button class="numpad-button" singleOperand>|x|</button>
+        <div class="screen">
+            <div class="upper-screen">
+                <h4 id="screen2"></h4>
+                <h4 id="screen3"></h4>
+            </div>
+            <h2 id="screen">0</h2>
         </div>
-        <h2 id="screen">0</h2>
+        <button class="numpad-button" id="delete-button">←</button>
+
+        <button class="numpad-button" singleOperand>1/x</button>
+
+        <button class="numpad-button numpad-number">1</button>
+        <button class="numpad-button numpad-number">2</button>
+        <button class="numpad-button numpad-number">3</button>
+
+        <button class="numpad-button" doubleOperand>+</button>
+
+        <button class="numpad-button" doubleOperand>log</button>
+
+        <button class="numpad-button numpad-number">4</button>
+        <button class="numpad-button numpad-number">5</button>
+        <button class="numpad-button numpad-number">6</button>
+
+        <button class="numpad-button" doubleOperand>-</button>
+
+        <button class="numpad-button" constantButton>π</button>
+
+        <button class="numpad-button numpad-number">7</button>
+        <button class="numpad-button numpad-number">8</button>
+        <button class="numpad-button numpad-number">9</button>
+
+        <button class="numpad-button" doubleOperand>*</button>
+
+        <button class="numpad-button" constantButton>е</button>
+
+        <button class="numpad-button numpad-number">0</button>
+        <button class="numpad-button" id="dot-button">.</button>
+        <button class="numpad-button" id="reset">C</button>
+
+        <button class="numpad-button" doubleOperand>/</button>
+
+        <button class="numpad-button" doubleOperand>mod</button>
+        <button class="numpad-button" doubleOperand>x^y</button>
+        <button class="numpad-button" doubleOperand>x^1/y</button>
+        <button class="numpad-button" singleOperand>n!</button>
+        <button class="numpad-button" id="calculate">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            =
+        </button>
     </div>
-    <button class="numpad-button" id="delete-button">←</button>
-
-    <button class="numpad-button">1/x</button>
-
-    <button class="numpad-button numpad-number">1</button>
-    <button class="numpad-button numpad-number">2</button>
-    <button class="numpad-button numpad-number">3</button>
-
-    <button class="numpad-button" doubleOperand>+</button>
-
-    <button class="numpad-button" doubleOperand>log</button>
-
-    <button class="numpad-button numpad-number">4</button>
-    <button class="numpad-button numpad-number">5</button>
-    <button class="numpad-button numpad-number">6</button>
-
-    <button class="numpad-button" doubleOperand>-</button>
-
-    <button class="numpad-button">π</button>
-
-    <button class="numpad-button numpad-number">7</button>
-    <button class="numpad-button numpad-number">8</button>
-    <button class="numpad-button numpad-number">9</button>
-
-    <button class="numpad-button" doubleOperand>*</button>
-
-    <button class="numpad-button">е</button>
-
-    <button class="numpad-button numpad-number">0</button>
-    <button class="numpad-button" id="dot-button">.</button>
-    <button class="numpad-button" id="reset">C</button>
-
-    <button class="numpad-button" doubleOperand>/</button>
-
-    <button class="numpad-button" doubleOperand>mod</button>
-    <button class="numpad-button" doubleOperand>x^y</button>
-    <button class="numpad-button" doubleOperand>x^1/y</button>
-    <button class="numpad-button">n!</button>
-    <button class="numpad-button" id="calculate">=</button>
 </div>
 
 <script src="../js/app.js"></script>
