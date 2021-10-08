@@ -3,15 +3,17 @@
     margin: 0;
 }
 body{
-    background-color: #282828;
+    background-image: linear-gradient(315deg, rgb(0, 0, 0), rgb(102, 0, 102), rgb(212, 91, 212));
+    height: 100vh;
 }
 #calculator{
-    margin: 5px;
-    width: 50vw;
+    padding: 5px;
+    width: 60vw;
+    height: 70vh;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 18.5% 18.5% 18.5% 18.5% 18.5%;
     grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-    grid-gap: 2vw 2vh;
+    grid-gap: 2vh 1vw;
 }
 .screen{
     border-width: 3px;
@@ -41,10 +43,86 @@ body{
     background-color: black;
     color: pink;
     border: 2px solid pink;
-
+    transition: 0.2s;
 }
+.numpad-button:hover{
+    background-color: rgb(212, 91, 212);
+    color: pink;
+    border-color: pink;
+}
+
 .numpad-number{
     background-color: pink;
     color: black;
     border: 2px solid black;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+#calculate{
+    position: relative;
+    transition: 0.2s;
+    overflow: hidden;
+}
+#calculate:hover{
+    border: none;
+    color: black;
+    background: pink;
+    box-shadow: 0 0 10px pink, 0 0 40px pink, 0 0 80px pink;
+    transition-delay: 1s;
+}
+#calculate span{
+    position: absolute;
+    display: block;
+}
+#calculate span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, pink);
+}
+#calculate:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+#calculate span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, pink);
+}
+#calculate:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#calculate span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, pink);
+}
+#calculate:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#calculate span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, pink);
+}
+#calculate:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+button{
+    cursor: pointer;
 }
